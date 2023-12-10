@@ -22,6 +22,24 @@ function Foreground() {
         close: true, 
         tag:{isOpen: false, tagTitle: "Upload", tagColor:"green"},
         },
+        {
+          desc: "The background is working welllll", 
+      filesize: ".9mb", 
+      close: true, 
+      tag:{isOpen: true, tagTitle: "Download Now", tagColor:"green"},
+      },
+      {
+          desc: "The background is working welllll", 
+      filesize: ".9mb", 
+      close: true, 
+      tag:{isOpen: true, tagTitle: "Download Now", tagColor:"blue"},
+      },
+      {
+          desc: "The background is working welllll", 
+      filesize: ".9mb", 
+      close: true, 
+      tag:{isOpen: false, tagTitle: "Upload", tagColor:"green"},
+      },
     ];
     useState()
   return (
