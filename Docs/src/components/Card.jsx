@@ -1,36 +1,33 @@
-import React from 'react'
-import { FaRegFileAlt } from "react-icons/fa";
-import { HiOutlineDownload } from "react-icons/hi";
+import React from 'react';
 import { IoIosClose } from "react-icons/io";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-function Card({data, reference }) {
+function Card({ data, reference, onDelete }) {
+  // Default color if no color is provided
+  const defaultColor = { bg: 'bg-zinc-900/90', shadow: 'shadow-lg' };
+
+  // Use provided color or default
+  const { bg, shadow } = data.color || defaultColor;
+
   return (
-    <motion.div drag dragConstraints={reference}
-     whileDrag={{scale:1.2}}
+    <motion.div
+      drag
+      dragConstraints={reference}
+      whileDrag={{scale:1.1}}
       dragElastic={.1}
       dragTransition={{ bounceStiffness: 100, bounceDamping: 30 }}
-      className='relative flex-shrink-0 w-60 h-72 rounded-[40px] bg-zinc-900/90 text-white px-5 py-10 overflow-hidden'>
-       <FaRegFileAlt />
-       <p className='text-xs leading-tight mt-5 font-semibold'>{data.desc}</p>
-       <div className='footer absolute bottom-0 w-full  left-0 '>
-            <div className='flex items-center justify-between px-8 py-3 mb-3'>
-            <h5>{data.filesize}</h5>
-            <span className='w-7 h-7 bg-zinc-600 rounded-full flex items-center justify-center'>
-                {data.close ? <IoIosClose /> : <HiOutlineDownload size=".7rem" color='#fff'/>              }
-                
-                
-            </span>
-            </div>
-            {data.tag.isOpen && (
-                    <div className={`tag w-full py-4 ${data.tag.tagColor === "blue" ? "bg-blue-600" : "bg-green-600"} flex items-center justify-center`}>
-                            <h3 className="text-sm font-semibold">{data.tag.tagTitle}</h3>
-                </div>
-                )}
-            
-       </div>
+      className={`relative flex-shrink-0 w-80 h-[420px] rounded-[25px] text-white px-8 py-10 overflow-hidden ${bg} ${shadow}`}
+    >
+      <button 
+        onClick={() => onDelete(data.id)}
+        className="absolute top-4 right-4 text-zinc-400 hover:text-white transition-colors"
+      >
+        <IoIosClose size="2rem" />
+      </button>
+      <h3 className='text-xl font-bold mb-6 text-zinc-200'>Note</h3>
+      <p className='text-2xl leading-snug font-extralight text-zinc-100'>{data.desc}</p>
     </motion.div>
-  )
+  );
 }
 
-export default Card
+export default Card;
