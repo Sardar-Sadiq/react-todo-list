@@ -30,4 +30,8 @@ function Card({ data, reference, onDelete }) {
   );
 }
 
+<<<<<<< HEAD
 export default Card;
+=======
+export default Card;
+>>>>>>> a633acb8501dbb315ddb3532d291b14bfb8c35f4

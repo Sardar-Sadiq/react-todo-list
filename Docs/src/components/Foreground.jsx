@@ -2,7 +2,11 @@ import React, { useRef, useState, useEffect } from 'react';
 import Card from './Card';
 import { IoAddCircleOutline } from "react-icons/io5";
 
+<<<<<<< HEAD
 // Adding color palettes array without disturbing the main code this is the form of the todo list
+=======
+// Adding color palettes array without disturbing the main code
+>>>>>>> a633acb8501dbb315ddb3532d291b14bfb8c35f4
 const colorPalettes = [
   { bg: 'bg-purple-500/50', shadow: 'shadow-purple-500/50' },
   { bg: 'bg-pink-500/50', shadow: 'shadow-pink-500/50' },
@@ -113,4 +117,8 @@ function Foreground() {
   );
 }
 
+<<<<<<< HEAD
 export default Foreground;
+=======
+export default Foreground;
+>>>>>>> a633acb8501dbb315ddb3532d291b14bfb8c35f4
