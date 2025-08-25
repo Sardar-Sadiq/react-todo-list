@@ -1,1 +1,22 @@
 hello this backend file
+
+
+
+REST API
+
+it uses HTTP methods;
+GET - Get some posts on instagram
+POST - Create a post
+PUT - Updatea post
+DELETE - Delete a post 
+
+    HTTP Status codes
+----------------------------
+1xx - information
+2xx -Success ( everything is worked as expected)
+3xx - Redirection
+the 300 status codes are for redirection meaning the server si telling the client, "Hey, the thing your looking for is somewhere else."
+4xx - Cleint Errors
+5xx = server errors
+500 internal server error =  something broke on the server.
+503 service unavailble - server is temporarily overlaoded or dowm
