@@ -1,0 +1,9 @@
+// import express from "express" -> is need to use means we need to write type: module in package.json above the keywords
+
+const express = require("express")
+
+const app = express();
+
+app.listen(5001, ()=> {
+    console.log("Server started on PORT 5001");
+})
