@@ -6,7 +6,7 @@ const app = express();
 
 app.get("/api/notes", (req,res) => {
    // send the notes
-    res.status(200_).send("you got 50 notes");
+    res.status(200).send("you got 50 notes");
 })
 
 
