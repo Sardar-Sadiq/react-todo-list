@@ -20,3 +20,9 @@ the 300 status codes are for redirection meaning the server si telling the clien
 5xx = server errors
 500 internal server error =  something broke on the server.
 503 service unavailble - server is temporarily overlaoded or dowm
+
+
+
+
+What is an Endpoint?
+An endpoint is a combination of a URL + HTTP method that lets the cleund interact with a specific resource.
