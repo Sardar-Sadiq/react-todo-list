@@ -8,6 +8,7 @@ const app = express();
 
 app.use("/api/notes", notesRoutes);
 
+
 // app.get("/api/notes", (req,res) => {
 //    // send the notes
 //     res.status(200).send("you got 50 notes");
