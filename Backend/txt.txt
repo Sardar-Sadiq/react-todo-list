@@ -34,3 +34,9 @@ get - send the data
 post - add the datas
 put - update the data
 Delete - delete the data
+
+the get, post, put, delete are called the CRUD operations 
+C- Create
+R- Read
+U- Update
+D- Delete
