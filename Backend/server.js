@@ -14,6 +14,18 @@ app.post("/api/notes", (req,res) => {
      res.status(201).json("note added successfully");
 })
 
+app.put("/api/notes", (req,res) => {
+    // update the notes
+     res.status(200).json("note updated successfully");
+})
+
+app.delete("/api/notes", (req,res) => {
+    // delete the notes
+     res.status(200).json("note deleted successfully");
+})
+
+
+
 app.listen(5001, ()=> {
     console.log("Server started on PORT 5001");
 })

@@ -26,3 +26,11 @@ the 300 status codes are for redirection meaning the server si telling the clien
 
 What is an Endpoint?
 An endpoint is a combination of a URL + HTTP method that lets the cleund interact with a specific resource.
+
+
+get, post, put, Delete
+
+get - send the data
+post - add the datas
+put - update the data
+Delete - delete the data
